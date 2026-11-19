@@ -1,0 +1,23 @@
+# Changelog
+
+## [1.1.0] - Initial public release
+
+### Added
+
+- Aircraft spawning in configured Minecraft structures.
+- Global structure and aircraft configuration.
+- Structure-specific aircraft configuration.
+- Weighted aircraft selection through `aircraftPool`.
+- Persistent one-attempt-per-structure handling.
+- `/apocaircraft reload` command.
+- `/apocaircraft reset` command.
+
+### Compatibility
+
+- The original `aircraft` configuration field remains supported.
+- Designed for Minecraft 1.20.1 and Forge 47.x.
+- Compatible with Immersive Aircraft and aircraft add-ons that provide valid entity IDs.
+
+### Improvements
+
+- Invalid, empty, or malformed configuration files now fall back to the default configuration instead of causing errors.
